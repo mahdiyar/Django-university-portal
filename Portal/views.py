@@ -1,17 +1,74 @@
-from twisted.names.dns import NULL
-from django.contrib.auth.management import get_default_username
 from django.shortcuts import render
-
+from  Portal.forms import LoginForm, addCourse,addPoint,userInfo,point,courses
+from django.contrib.auth import  authenticate, login , logout
 # Create your views here.
 from django.views.generic.list import ListView
-from Portal.models import users , course , studentList
+from Portal.models import  course , studentList
+from django.http import  HttpResponseRedirect , request
+from django.contrib.auth.decorators import  login_required
 
+@login_required
 def index(request):
     return render(request,"home.html", {})
-def profList(request):
-    mylist=users.objects.get(accessLevel=2)
-    return render(request,'user_List.html', {'userList': mylist})
 
+def Login(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(username = username,password = password)
+        if user is not  None:
+            login(request,user)
+            return HttpResponseRedirect("/Home/")
+        else:
+            return  render(request,"login.html")
+
+    else:
+        return render(request,"Login.html")
+
+
+def courseList(request):
+    list = course.objects.all()
+    return render(request,"courseList.html",{'list' : list})
+
+
+def classList(request,courseId):
+    list = studentList.objects.filter(id = courseId)
+    courseObj = list.first().course.name
+    return  render(request,"classList.html",{'list' : list,'course' : courseObj})
+
+def studentCourseList(request):
+    cs = studentList.objects.filter(student = request.user)
+    return render(request,"studentCourseList.html",{'list' : cs})
+
+@login_required
+def points(request):
+    return  render(request,"points.html",{'form' : point()})
+
+def addPoint(request,ListId,point):
+    itm = studentList.objects.get(Id = ListId)
+    itm.point = point
+    itm.save()
+    return classList(request,itm.course.teacherID.username)
+"""
+def classList(request,usernameF):
+    usr = users.objects.get(username = usernameF)
+    prof = course.objects.filter(teacherID = usr)
+
+    return  render(request,"profClassList.html",{'list' : prof })
+"""
+
+@login_required
+def userSetting(request):
+    tmp = userInfo({'model' :request.user})
+    return render(request,"setting.html",{'form' : userInfo(instance=request.user)})
+
+@login_required
+def user_logout(request):
+    logout(request)
+    return HttpResponseRedirect("/Login/")
+
+
+"""
 def addProf(request):
     return  render(request,"add_prof.html",{})
 def submitProf(request):
@@ -27,10 +84,6 @@ def removeProf(request,userId):
     prof = users.objects.get(Id = userId)
     prof.delete()
     return profList(request)
-
-def courseList(request):
-    list = course.objects.all()
-    return render(request,"courseList.html",{'list' : list})
 
 
 def addCourse(request):
@@ -51,48 +104,5 @@ def removeCourse(request,courseId):
     c.save()
     return  courseList(request)
 
-def studentCourseList(request,studentId):
-    stu = users.objects.get(Id= studentId)
-    cs = studentList.objects.filter(student = stu)
-    return render(request,"studentCourseList.html",{'list' : cs})
-
-def addPoint(request,ListId,point):
-    itm = studentList.objects.get(Id = ListId)
-    itm.point = point
-    itm.save()
-    return classList(request,itm.course.teacherID.username)
-def classList(request,usernameF):
-    usr = users.objects.get(username = usernameF)
-    prof = course.objects.filter(teacherID = usr)
-
-    return  render(request,"profClassList.html",{'list' : prof })
-
-def changePassword(request):
-    return render(request,"changePassword.html",{})
-
-def submitPassword(request,password):
-    user = users.objects.get("")
-    user.password = password
-    user.save()
-
-    return index(request)
-
-'''
-
-class StudentManager(ListView):
-    model = users
-    template_name = 'user_List.html'
-
-
-
-class porfManager(ListView):
-    model = users
-
-
-class courseManager(ListView):
-    model = course
-
-
-'''
-
+"""
 

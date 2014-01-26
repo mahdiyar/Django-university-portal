@@ -4,13 +4,13 @@
     <title></title>
 </head>
 <body>
+<h1> class {{ course }} : </h1>
 <ul>
-{% for itm in list  %}
+{% for itm in list %}
     <li>
-    <a href="/course/" >{{ itm.name }}     {{ itm.teacherID.name }}</a>
+        {{ itm.student.username }}
     </li>
     {% endfor %}
     </ul>
-
 </body>
 </html>

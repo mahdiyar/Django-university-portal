@@ -1,8 +1,6 @@
 from django.conf.urls import patterns, include, url
-
 from django.contrib import admin
-from Portal import views
-from Portal.views import StudentManager, profList, addProf, courseList
+from Portal.views import   courseList, index , Login, userSetting , points, user_logout , classList
 
 admin.autodiscover()
 
@@ -11,12 +9,19 @@ urlpatterns = patterns('',
     # url(r'^$', 'uni.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+# !!!!       add (?i) after ^ in the patterns for support incase sensitive urls !!!!!!
+
     (r'^admin/', include(admin.site.urls)),
-    (r'^edu/students/' , StudentManager.as_view()),
-    (r'^edu/prof/$',profList),
-    (r'^edu/prof/add',addProf),
-    (r'^student/courseList' , courseList),
-    (r'^edu/courseList' , courseList),
+#    (r'^(?i)edu/prof/add',addProf),
+     (r'^(?i)Setting',userSetting),
+    (r'^(?i)student/courseList' , courseList),
+    (r'^student/classList/(\d{1,2})/$',classList),
+    (r'^(?i)edu/courseList' , courseList),
+    (r'^(?i)Home/',index),
+    (r'^(?i)Login/$',Login),
+    (r'^(?i)$',index),
+    (r'^prof/points',points),
+    (r'^(?i)Logout/$',user_logout),
 #    (r'^portal/$',uni.Portal.views.index),
 #    (r'^portal/login',uni.Protal.views.login),
 #    (r'^portal/changePass',uni.Protal.views.changePass),
