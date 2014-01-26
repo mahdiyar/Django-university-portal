@@ -21,14 +21,13 @@ class addPoint(ModelForm):
     pass
 
 class userInfo(ModelForm):
-    password = forms.CharField(widget=forms.PasswordInput)
-    email = forms.EmailField()
-    first_name = forms.CharField(max_length=100)
-    last_name = forms.CharField(max_length=100)
+ #   password = forms.CharField(widget=forms.PasswordInput)
+ #   email = forms.EmailField()
+ #   first_name = forms.CharField(max_length=100)
+ #   last_name = forms.CharField(max_length=100)
     class Meta:
         model = User
-        fields = ('password','email','first_name','last_name')
-
+        fields = ('email','first_name','last_name')
 
 class point(ModelForm):
     class Meta:
@@ -40,3 +39,7 @@ class courses(ModelForm):
         model = course
         fields = ('name','description')
 
+class ClassPoints(ModelForm):
+    class Meta:
+        model = course
+        fields = ('name','description','teacher')

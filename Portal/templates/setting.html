@@ -4,6 +4,16 @@
     <title></title>
 </head>
 <body>
-{{ form }}
+<form method="post" action="/setting" >
+    {%  csrf_token %}
+    {{ form }}
+    <input type="submit" >
+</form>
+
+<form method="post" action="/setting">
+    {% csrf_token %}
+   <p> Change Password :</p> <input type="password" name="password">
+    <input type="submit" name="Change">
+</form>
 </body>
 </html>

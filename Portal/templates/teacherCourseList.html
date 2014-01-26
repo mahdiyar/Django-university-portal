@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1> {{ username }} : classes: </h1>
+<table>
+    <tr>
+        <td>course name</td>
+        <td>description </td>
+        <td>Date</td>
+    </tr>
+
+
+{% for itm in list %}
+  <tr>
+    <td>
+     <a href="/prof/class/{{ itm.id }}">  {{ itm.name }}  </a>
+    </td>
+    <td>
+    {{ itm.description }}
+    </td>
+    <td>
+    {{ itm.Date }}
+    </td>
+  </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

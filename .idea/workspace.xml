@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="1666c118-b257-4852-85a1-a337a888af78" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Portal/templates/add_prof.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Portal/templates/addCourse.html" afterPath="$PROJECT_DIR$/Portal/templates/teacherCourseList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portal/templates/classList.html" afterPath="$PROJECT_DIR$/Portal/templates/classList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portal/templates/courseList.html" afterPath="$PROJECT_DIR$/Portal/templates/courseList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portal/templates/studentCourseList.html" afterPath="$PROJECT_DIR$/Portal/templates/studentCourseList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portal/forms.py" afterPath="$PROJECT_DIR$/Portal/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portal/templates/setting.html" afterPath="$PROJECT_DIR$/Portal/templates/setting.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uni/urls.py" afterPath="$PROJECT_DIR$/uni/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portal/views.py" afterPath="$PROJECT_DIR$/Portal/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -31,21 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Portal/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="12" selection-start="748" selection-end="748" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="540">
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uni/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="47" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+            <state line="24" column="16" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -53,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="forms.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Portal/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="24" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="720">
+            <state line="44" column="47" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.9269481" vertical-offset="89" max-vertical-offset="750">
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -64,39 +54,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Portal/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profClassList.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Portal/templates/profClassList.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="48" selection-start="150" selection-end="150" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Portal/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="98" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="1680">
+            <state line="44" column="20" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1965">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="studentCourseList.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Portal/templates/studentCourseList.html">
+      <file leaf-file-name="user_List.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Portal/templates/user_List.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="31" selection-start="96" selection-end="96" vertical-scroll-proportion="0.2542373" vertical-offset="0" max-vertical-offset="645">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="180">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="decorators.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
@@ -106,15 +85,6 @@
         <entry file="file://$PROJECT_DIR$/Portal/templates/classList.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="9" selection-start="121" selection-end="228" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="330">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="courses.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Portal/templates/courses.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="7" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="210">
               <folding />
             </state>
           </provider>
@@ -147,22 +117,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/uni/settings.py" />
         <option value="$PROJECT_DIR$/Portal/templates/Login.html" />
         <option value="$PROJECT_DIR$/Portal/templates/home.html" />
         <option value="$PROJECT_DIR$/Portal/templates/homeTeacher.html" />
         <option value="$PROJECT_DIR$/Portal/templates/profClassList.html" />
-        <option value="$PROJECT_DIR$/Portal/templates/setting.html" />
         <option value="$PROJECT_DIR$/Portal/templates/points.html" />
         <option value="$PROJECT_DIR$/Portal/templates/courses.html" />
         <option value="$PROJECT_DIR$/Portal/models.py" />
-        <option value="$PROJECT_DIR$/Portal/forms.py" />
         <option value="$PROJECT_DIR$/Portal/admin.py" />
         <option value="$PROJECT_DIR$/Portal/templates/courseList.html" />
         <option value="$PROJECT_DIR$/Portal/templates/classList.html" />
-        <option value="$PROJECT_DIR$/uni/urls.py" />
-        <option value="$PROJECT_DIR$/Portal/views.py" />
         <option value="$PROJECT_DIR$/Portal/templates/studentCourseList.html" />
+        <option value="$PROJECT_DIR$/Portal/templates/setting.html" />
+        <option value="$PROJECT_DIR$/uni/urls.py" />
+        <option value="$PROJECT_DIR$/Portal/templates/teacherCourseList.html" />
+        <option value="$PROJECT_DIR$/Portal/views.py" />
+        <option value="$PROJECT_DIR$/Portal/forms.py" />
       </list>
     </option>
   </component>
@@ -551,29 +521,33 @@
       <created>1390748721658</created>
       <updated>1390748721658</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update...">
+      <created>1390749790916</created>
+      <updated>1390749790916</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972136" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980783" sideWeight="0.6702786" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972136" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -587,50 +561,22 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="edit in sql structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit in sql structure" />
+    <MESSAGE value="update..." />
+    <option name="LAST_COMMIT_MESSAGE" value="update..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Portal/views.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Portal/templates/Login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="52" selection-start="264" selection-end="264" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="40" selection-start="5921" selection-end="5921" vertical-scroll-proportion="0.66027397" vertical-offset="1574" max-vertical-offset="4215" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Portal/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="240" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Portal/templates/homeTeacher.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="210" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Portal/templates/setting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="7" selection-start="72" selection-end="72" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Portal/templates/points.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="7" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Portal/templates/courses.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="7" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="210">
@@ -654,15 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Portal/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="24" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="720">
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Portal/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
@@ -679,15 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uni/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="47" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Portal/templates/classList.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="9" selection-start="121" selection-end="228" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="330">
@@ -695,17 +623,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Portal/views.py">
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="98" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="1680">
+        <state line="209" column="0" selection-start="7310" selection-end="7310" vertical-scroll-proportion="0.45945945" vertical-offset="2772" max-vertical-offset="3105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="0" selection-start="4537" selection-end="4537" vertical-scroll-proportion="0.33125" vertical-offset="1364" max-vertical-offset="4215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/contrib/auth/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portal/templates/teacherCourseList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="25" selection-start="279" selection-end="279" vertical-scroll-proportion="0.36893204" vertical-offset="156" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Portal/templates/studentCourseList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="96" selection-end="96" vertical-scroll-proportion="0.2542373" vertical-offset="0" max-vertical-offset="645">
+        <state line="35" column="8" selection-start="65" selection-end="564" vertical-scroll-proportion="0.80582523" vertical-offset="276" max-vertical-offset="645">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portal/templates/setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="66" selection-start="304" selection-end="304" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portal/templates/user_List.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uni/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="16" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portal/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="20" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portal/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="47" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.9269481" vertical-offset="89" max-vertical-offset="750">
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

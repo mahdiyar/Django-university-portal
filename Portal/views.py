@@ -36,6 +36,7 @@ def classList(request,courseId):
     courseObj = list.first().course.name
     return  render(request,"classList.html",{'list' : list,'course' : courseObj})
 
+@login_required
 def studentCourseList(request):
     cs = studentList.objects.filter(student = request.user)
     return render(request,"studentCourseList.html",{'list' : cs,'username' : request.user.username})
@@ -49,6 +50,12 @@ def addPoint(request,ListId,point):
     itm.point = point
     itm.save()
     return classList(request,itm.course.teacherID.username)
+
+@login_required
+def profCourseList(request):
+    list = course.objects.filter(teacher= request.user)
+    return  render(request,'teacherCourseList.html',{'list' : list , 'username' : request.user.username})
+
 """
 def classList(request,usernameF):
     usr = users.objects.get(username = usernameF)
@@ -59,8 +66,20 @@ def classList(request,usernameF):
 
 @login_required
 def userSetting(request):
-    tmp = userInfo({'model' :request.user})
+    if(request.method == 'POST'):
+        setting = userInfo(request.POST,instance=request.user)
+        password = request.POST.get('password','0')
+        if password is not '0':
+            currentUser = request.user
+            currentUser.set_password(request.POST['password'])
+            currentUser.save()
+        elif setting.is_valid():
+            user  = setting.save()
+#            user.set_password(user.password)
+            user.save()
+
     return render(request,"setting.html",{'form' : userInfo(instance=request.user)})
+
 
 @login_required
 def user_logout(request):
