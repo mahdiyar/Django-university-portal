@@ -4,6 +4,35 @@
     <title></title>
 </head>
 <body>
+<h1> {{ username }} : classes: </h1>
+<table>
+    <tr>
+        <td>course name</td>
+        <td>description </td>
+        <td>Date</td>
+        <td> Teacher</td>
+        <td>Score</td>
+    </tr>
 
+<tr>
+{% for itm in list %}
+    <td>
+        {{ itm.course.name }}
+    </td>
+    <td>
+    {{ itm.course.description }}
+    </td>
+    <td>
+    {{ itm.course.Date }}
+    </td>
+    <td>
+    {{ itm.course.teacher.username }}
+    </td>
+    <td>
+    {{ itm.point }}
+    </td>
+    {% endfor %}
+    </tr>
+</table>
 </body>
 </html>

@@ -30,7 +30,7 @@ def courseList(request):
     list = course.objects.all()
     return render(request,"courseList.html",{'list' : list})
 
-
+@login_required
 def classList(request,courseId):
     list = studentList.objects.filter(id = courseId)
     courseObj = list.first().course.name
@@ -38,7 +38,7 @@ def classList(request,courseId):
 
 def studentCourseList(request):
     cs = studentList.objects.filter(student = request.user)
-    return render(request,"studentCourseList.html",{'list' : cs})
+    return render(request,"studentCourseList.html",{'list' : cs,'username' : request.user.username})
 
 @login_required
 def points(request):

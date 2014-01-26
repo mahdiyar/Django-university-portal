@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from Portal.views import   courseList, index , Login, userSetting , points, user_logout , classList
+from Portal.views import   courseList, index , Login, userSetting , points, user_logout , classList ,studentCourseList
 
 admin.autodiscover()
 
@@ -16,6 +16,7 @@ urlpatterns = patterns('',
      (r'^(?i)Setting',userSetting),
     (r'^(?i)student/courseList' , courseList),
     (r'^student/classList/(\d{1,2})/$',classList),
+    (r'^student/myCourses/',studentCourseList),
     (r'^(?i)edu/courseList' , courseList),
     (r'^(?i)Home/',index),
     (r'^(?i)Login/$',Login),
