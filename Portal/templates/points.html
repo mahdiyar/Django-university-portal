@@ -4,6 +4,11 @@
     <title></title>
 </head>
 <body>
-{{ form }}
+<h1> student {{ item.student.username }}  score in {{ itm.course.name }} course </h1>
+<form method="post" >
+    {%  csrf_token %}
+    {{ form }}
+    <input type="submit">
+</form>
 </body>
 </html>

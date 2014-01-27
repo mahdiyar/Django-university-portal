@@ -43,3 +43,4 @@ class ClassPoints(ModelForm):
     class Meta:
         model = course
         fields = ('name','description','teacher')
+

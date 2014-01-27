@@ -4,13 +4,21 @@
     <title></title>
 </head>
 <body>
-<ul>
-{% for itm in list  %}
-    <li>
-    <a href="/course/" >{{ itm.name }}     {{ itm.teacherID.name }}</a>
-    </li>
-    {% endfor %}
-    </ul>
+<h1> {{ course.name }} student list </h1>
+<table>
+    <tr>
+
+        <td>student username</td>
+        <td> Point</td>
+    </tr>
+    {% for itm in list  %}
+        <tr>
+
+        <td> {{ itm.student.username }}  </td>
+        <td>  <a href="/prof/points/{{ itm.id }}" > {{ itm.point }} </a> </td>
+    </tr>
+        {% endfor %}
+</table>
 
 </body>
 </html>

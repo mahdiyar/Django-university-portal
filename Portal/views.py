@@ -25,37 +25,46 @@ def Login(request):
     else:
         return render(request,"Login.html")
 
-
+#all courses of this semester
 def courseList(request):
     list = course.objects.all()
     return render(request,"courseList.html",{'list' : list})
 
+# students in course with id = courseid (view for students) no write access
 @login_required
 def classList(request,courseId):
-    list = studentList.objects.filter(id = courseId)
-    courseObj = list.first().course.name
-    return  render(request,"classList.html",{'list' : list,'course' : courseObj})
+    courseObj = course.objects.filter(id = courseId)
+    list = studentList.objects.filter(course = courseObj)
+    return  render(request,"classList.html",{'list' : list,'course' : courseObj.first().name})
 
+
+#my courses , as student
 @login_required
 def studentCourseList(request):
     cs = studentList.objects.filter(student = request.user)
     return render(request,"studentCourseList.html",{'list' : cs,'username' : request.user.username})
 
+# view for add/update student score
 @login_required
-def points(request):
-    return  render(request,"points.html",{'form' : point()})
+def points(request,id):
+    itm = studentList.objects.filter(id = id)[0]
+    if request.method == 'POST':
+        score = point(request.POST,instance=itm)
+        if score.is_valid():
+            itm = score.save()
+            itm.save()
+    return  render(request,"points.html",{'form' : point(instance= itm) , 'item' : itm})
 
-def addPoint(request,ListId,point):
-    itm = studentList.objects.get(Id = ListId)
-    itm.point = point
-    itm.save()
-    return classList(request,itm.course.teacherID.username)
-
+# all  courses that i teach this semester
 @login_required
 def profCourseList(request):
     list = course.objects.filter(teacher= request.user)
     return  render(request,'teacherCourseList.html',{'list' : list , 'username' : request.user.username})
 
+def profClassList(request,classID):
+    myClass = course.objects.filter(id=classID)
+    stuList = studentList.objects.filter(course = myClass)
+    return  render(request,'profClassList.html',{'list' : stuList , 'course' : myClass})
 """
 def classList(request,usernameF):
     usr = users.objects.get(username = usernameF)
